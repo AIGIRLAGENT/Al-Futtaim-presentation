@@ -25,8 +25,18 @@
             align-items: center;
             text-align: center;
             background-color: #f8fafc;
-            padding: 4rem;
+            padding: 1rem;
             position: relative;
+        }
+        @media (min-width: 768px) {
+            .swiper-slide {
+                padding: 2rem;
+            }
+        }
+        @media (min-width: 1024px) {
+            .swiper-slide {
+                padding: 4rem;
+            }
         }
         .swiper-slide-dark {
              background-color: #0f172a;
@@ -44,14 +54,25 @@
         }
         .footer {
             position: absolute;
-            bottom: 20px;
+            bottom: 10px;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 0.75rem;
+            font-size: 0.875rem;
             color: #64748b;
             width: 90%;
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        @media (max-width: 640px) {
+            .footer {
+                font-size: 0.75rem;
+                bottom: 5px;
+                flex-direction: column;
+                text-align: center;
+                gap: 0.25rem;
+            }
         }
         .footer-dark {
             color: #94a3b8;
@@ -66,8 +87,8 @@
             <div class="swiper-slide swiper-slide-dark">
                 <div class="slide-content text-center">
                     <p class="text-lg font-semibold text-blue-300">A Smart Visualization & Engagement Platform</p>
-                    <h1 class="text-5xl md:text-7xl font-extrabold my-4 leading-tight">Hair Transplant AI</h1>
-                    <h2 class="text-2xl md:text-3xl font-bold text-slate-200">Revolutionizing the Hair Transplant Consultation</h2>
+                    <h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold my-4 leading-tight">Hair Transplant AI</h1>
+                    <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-slate-200">Revolutionizing the Hair Transplant Consultation</h2>
                     <p class="mt-12 text-md text-slate-400">Prepared for: Al Futtaim Health Hub</p>
                 </div>
                 <div class="footer footer-dark">
@@ -188,7 +209,7 @@
                             </div>
                             <div class="text-center">
                                 <h4 class="font-bold text-slate-700 mb-2">Potential Hairstyles for Patient</h4>
-                                <div class="grid grid-cols-3 gap-3">
+                                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3">
                                     <img src="https://firebasestorage.googleapis.com/v0/b/hairstyle-eaf10.firebasestorage.app/o/Patient%204.png?alt=media&token=f4a58622-dfdc-40ca-9905-d18e1af6c45c" alt="Potential Hairstyle 1" class="rounded-lg shadow-md">
                                     <img src="https://firebasestorage.googleapis.com/v0/b/hairstyle-eaf10.firebasestorage.app/o/Patient%205.png?alt=media&token=0d4c0261-88aa-4700-ad2b-b0afcd7ea8a8" alt="Potential Hairstyle 2" class="rounded-lg shadow-md">
                                     <img src="https://firebasestorage.googleapis.com/v0/b/hairstyle-eaf10.firebasestorage.app/o/Patient%207.png?alt=media&token=69b6cc4c-64fd-4eb8-b523-ec709c531117" alt="Potential Hairstyle 4" class="rounded-lg shadow-md">
